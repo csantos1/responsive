@@ -1,0 +1,30 @@
+{
+  "name": "responsive",
+  "version": "0.0.0",
+  "description": "A responsive one-page website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csantos1/responsive"
+  },
+  "keywords": [
+    "responsive"
+  ],
+  "author": "Cecilia Santos",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp-util": "~3.0.7",
+    "gulp": "~3.9.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-browserify": "~0.5.1",
+    "jquery": "~2.1.4",
+    "gulp-compass": "~2.1.0",
+    "gulp-connect": "~2.3.1",
+    "gulp-if": "~2.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-minify-html": "~1.0.5"
+  }
+}
