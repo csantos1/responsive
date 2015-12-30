@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
@@ -27,7 +26,6 @@ if (env==='development') {
 }
 
 jsSources = [
-  'components/scripts/jqloader.js',
   'components/scripts/TweenMax.min.js',
   'components/scripts/jquery.scrollmagic.min.js',
   'components/scripts/script.js'
@@ -38,7 +36,6 @@ htmlSources = [outputDir + '*.html'];
 gulp.task('js', function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
-    .pipe(browserify())
     .on('error', gutil.log)
     .pipe(gulpif(env === 'production', uglify()))
     .pipe(gulp.dest(outputDir + 'js'))
