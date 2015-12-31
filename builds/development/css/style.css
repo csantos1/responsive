@@ -176,6 +176,7 @@ header #nav {
   background-image: -webkit-linear-gradient(top, #0a5c71, #063642);
   background-image: linear-gradient(to bottom, #0a5c71, #063642);
   width: 100%;
+  z-index: 100;
 }
 header #nav:before, header #nav:after {
   content: '';
@@ -285,6 +286,10 @@ header #nav .navbar ul li a:hover {
   header #nav .navbar ul li a.icon {
     background-image: none;
   }
+}
+header #nav .navbar ul li a.active {
+  background-color: #df4848;
+  color: #ffffff;
 }
 
 #welcome {

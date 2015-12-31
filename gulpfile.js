@@ -27,6 +27,7 @@ if (env==='development') {
 
 jsSources = [
   'components/scripts/TweenMax.min.js',
+  'components/scripts/jquery-2.1.4.min.js',
   'components/scripts/jquery.scrollmagic.min.js',
   'components/scripts/script.js'
 ];
